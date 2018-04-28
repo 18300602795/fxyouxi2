@@ -106,7 +106,6 @@ public class NewListGameItem extends BaseDownView {
     }
 
     private void initUI() {
-        
         ViewGroup.LayoutParams layoutParams = getLayoutParams();
         if (layoutParams == null) {
             layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
