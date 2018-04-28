@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/shape_circle_rect_white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择下载地址"
+        android:padding="8dp"
+        android:textSize="16sp"
+        />
+    <ListView
+        android:id="@+id/lv_selectAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:footerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"
+        android:layout_marginBottom="15dp"
+        ></ListView>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_circle_rect_blue"
+        android:visibility="gone"
+        />
+</LinearLayout>

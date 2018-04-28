@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_comm_title"></include>
+    <com.etsdk.app.huov7.view.LoadStatusView
+        android:id="@+id/loadview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/common_item_gift_layout"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding16"
+                    android:layout_marginRight="@dimen/padding16"
+                    android:orientation="vertical">
+
+                    <View style="@style/line_color"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:text="礼包内容"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_content" />
+
+                    <TextView
+                        android:id="@+id/tv_gift_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:text="元宝55元 元宝55元"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_hint" />
+
+                    <View style="@style/line_color"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:text="兑换期限"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_content" />
+
+                    <TextView
+                        android:id="@+id/tv_gift_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_hint" />
+                    <View style="@style/line_color"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:text="使用方法"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_content"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_gift_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_hint"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.etsdk.app.huov7.view.LoadStatusView>
+</LinearLayout>

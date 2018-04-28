@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/include_title_search"/>
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_main_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/game_tab_padding"
+        android:paddingBottom="@dimen/game_tab_padding"
+        app:tl_textSelectColor="#71c13e"
+        app:tl_iconWidth="@dimen/game_tab_iconsize"
+        app:tl_iconHeight="@dimen/game_tab_iconsize"
+        app:tl_textUnselectColor="@color/text_gamefragment_tag"
+        app:tl_textsize="@dimen/game_tab_textsize"
+        app:tl_indicator_color="#71c13e"
+        app:tl_indicator_height="2dp"
+        app:tl_tab_padding="3dp"
+        app:tl_tab_space_equal="true"
+        >
+    </com.flyco.tablayout.CommonTabLayout>
+    <com.liang530.views.viewpager.SViewPager
+        android:id="@+id/vp_main_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.liang530.views.viewpager.SViewPager>
+</LinearLayout>

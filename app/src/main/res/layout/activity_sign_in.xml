@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.etsdk.app.huov7.ui.SignInActivity">
+
+    <include layout="@layout/include_comm_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.etsdk.app.huov7.view.AdImageView
+                android:id="@+id/iv_signTop"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/earn_icon" />
+
+            <TextView
+                android:id="@+id/tv_sign_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="本月已累计签到X次"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray"
+                android:paddingBottom="8dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="8dp"></android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_circle_rect_blue"
+                android:text="我要签到"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginTop="@dimen/common_margin"
+                android:text="签到系统说明"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_content" />
+
+            <View style="@style/line_color" />
+
+            <TextView
+                android:id="@+id/tv_sign_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="@dimen/common_margin"
+                android:layout_marginTop="3dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="fdsafdsafsa"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

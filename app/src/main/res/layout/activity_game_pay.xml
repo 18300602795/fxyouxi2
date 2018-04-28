@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="com.etsdk.app.huov7.ui.GamePayActivity">
+    <include layout="@layout/include_comm_title"/>
+
+    <com.etsdk.app.huov7.view.LoadStatusView
+        android:id="@+id/loadview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_padding"
+                        android:layout_marginTop="@dimen/common_padding"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:text="充值账号："
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_normal"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="充值游戏："
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_normal" />
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_marginTop="@dimen/common_padding"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="24dp"-->
+                    <!--android:layout_gravity="top"-->
+                    <!--android:background="@drawable/shape_edite_r25_stroke_gray"-->
+                    <!--android:text="" />-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/editText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="24dp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:background="@drawable/shape_edite_r25_stroke_gray" />-->
+                    <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding"
+                        android:layout_marginTop="@dimen/common_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_normal"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_gameName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="@string/test_game_name"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_normal"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_marginTop="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:orientation="horizontal">
+
+                    <com.etsdk.app.huov7.view.AileEditText
+                        android:id="@+id/et_inputMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/bg_money_text_pre"
+                        android:gravity="center"
+                        android:hint="输入框"
+                        android:inputType="number"
+                        android:maxLength="7"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="元"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="*"
+                        android:textColor="@color/bg_blue" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单笔充值最少1元"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="对应的平台币数量"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_content" />
+
+                    <TextView
+                        android:id="@+id/tv_ailebi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="5000"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_normal" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_color"
+                    android:layout_marginTop="8dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_couponUseDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="使用说明?"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_hint" />
+
+                    <TextView
+                        android:id="@+id/tv_useCouponHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="当前可使用代金券200元"
+                        android:textColor="@color/bg_blue"
+                        android:textSize="@dimen/text_content" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <View style="@style/line_color" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pay_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_money"
+                        android:drawablePadding="5dp"
+                        android:text="300"
+                        android:textColor="@color/text_red"
+                        android:textSize="@dimen/text_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="您还需支付"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_content" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_circle_rect_blue"
+                    android:text="立即充值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_rewardScoreHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="可获得0积分"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_payDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:minHeight="100dp"
+                    android:paddingLeft="@dimen/common_margin"
+                    android:paddingRight="@dimen/common_margin"
+                    android:text="@string/pay_desc"
+                    android:textColor="@color/text_lowgray"
+                    android:textSize="@dimen/text_content" />
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </com.etsdk.app.huov7.view.LoadStatusView>
+</LinearLayout>

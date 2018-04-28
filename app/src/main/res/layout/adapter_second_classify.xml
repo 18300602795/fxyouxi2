@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_columnWeight="1">
+
+    <View
+        android:id="@+id/v_line_left"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/bg_gray" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_secondClassifyName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_line"
+        android:layout_toRightOf="@id/v_line_left"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:singleLine="true"
+        android:text="@string/test_game_name"
+        android:textColor="@color/text_main_black"
+        android:textSize="@dimen/text_content" />
+
+</RelativeLayout>

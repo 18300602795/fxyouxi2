@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/shape_circle_rect_white"
+        android:gravity="center"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="2dp">
+            <ImageView
+                android:id="@+id/iv_signIn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@mipmap/jidan"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/tv_show_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="+20积分"
+                android:textSize="8sp"
+                android:textColor="@color/text_red"
+                android:gravity="bottom|center"
+                android:paddingBottom="4dp"
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_sign_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/shape_circle_rect_egg_text"
+            android:gravity="center"
+            android:text="1天"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_hint" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_signInBorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_sign_in_border"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        />
+</FrameLayout>

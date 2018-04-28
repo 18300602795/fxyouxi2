@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_classify_game_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.etsdk.app.huov7.ui.ClassifyGameListActivity">
+    <include layout="@layout/include_comm_title"/>
+    <!--<com.flyco.tablayout.SlidingTabLayout-->
+        <!--android:id="@+id/tab_main_game"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--app:tl_textSelectColor="@color/bg_blue"-->
+        <!--app:tl_textUnselectColor="@color/text_black"-->
+        <!--app:tl_textsize="@dimen/text_normal"-->
+        <!--app:tl_indicator_color="@color/bg_blue"-->
+        <!--app:tl_indicator_height="2dp"-->
+        <!--app:tl_indicator_width_equal_title="true"-->
+        <!--android:background="@color/bg_blue"-->
+        <!--&gt;-->
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_main_game"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_comm"
+        app:tl_indicator_color="@color/bg_blue"
+        app:tl_indicator_corner_radius="4dp"
+        app:tl_indicator_style="BLOCK"
+        app:tl_textSelectColor="@color/white"
+        app:tl_textUnselectColor="@color/text_black"
+        app:tl_textsize="@dimen/text_normal"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_tab_space_equal="false"
+        app:tl_tab_padding="8dp"
+        android:visibility="gone"
+        />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/flowlayout"
+        zhy:max_select="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/bg_blue"
+        android:layout_marginTop="0.7dp"
+        android:visibility="gone">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tab_classify_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/bg_comm"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.liang530.views.viewpager.SViewPager
+        android:id="@+id/vp_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.liang530.views.viewpager.SViewPager>
+</LinearLayout>

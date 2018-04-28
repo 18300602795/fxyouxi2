@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_common"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_comm_title" />
+
+    <com.etsdk.app.huov7.view.LoadStatusView
+        android:id="@+id/loadview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="51dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/common_padding"
+                        android:paddingRight="@dimen/common_padding">
+
+                        <TextView
+                            android:id="@+id/tv_account_id"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="小号id：TODO" />
+
+                        <TextView
+                            android:id="@+id/tv_verify_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/huosdk_shenhe"
+                            android:drawablePadding="3dp"
+                            android:text="信息通过官方审核"
+                            android:textColor="@color/bg_green"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <com.etsdk.app.huov7.shop.ui.SellGameItem
+                        android:id="@+id/sellgameitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/common_margin"
+                        android:paddingRight="@dimen/common_margin">
+
+                        <TextView
+                            android:id="@+id/tv_create_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="上架时间：2017-9-9 " />
+
+                        <TextView
+                            android:id="@+id/tv_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="￥80"
+                            android:textColor="@color/red1"
+                            android:textSize="17sp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/bold_line"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/common_padding">
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="15dp"
+                            android:background="@color/charge_green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="卖家描述"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/common_padding"
+                        android:paddingLeft="@dimen/common_padding"
+                        android:paddingRight="@dimen/common_padding">
+
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_circle_rect_gray_gray"
+                            android:padding="10dp"
+                            android:text="卖家描述卖家描述卖家描述卖家描述卖家描述卖家描述卖家描述卖家描述卖家描述卖家描述"
+                            android:textColor="@color/black" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/line"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/common_padding">
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="15dp"
+                            android:background="@color/charge_green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="角色截图"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/common_padding"
+                        android:paddingLeft="@dimen/common_padding"
+                        android:paddingRight="@dimen/common_padding">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rcy_screenshot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/ll_option_buy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_favor"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@mipmap/huosdk_shoucang"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textSize="@dimen/text_middle" />
+
+                <TextView
+                    android:id="@+id/tv_buy"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_circle_rect_blue"
+                    android:gravity="center"
+                    android:text="立即购买 TODO元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_service"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@mipmap/huosdk_kefu"
+                    android:gravity="center"
+                    android:text="客服"
+                    android:textSize="@dimen/text_middle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_option_sell"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="待审核"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_middle" />
+
+                <TextView
+                    android:id="@+id/tv_more_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="更多操作"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_more_option"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/huosdk_more2" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.etsdk.app.huov7.view.LoadStatusView>
+</LinearLayout>

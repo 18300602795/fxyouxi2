@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.etsdk.app.huov7.ui.LoginActivityV1"
+    android:orientation="vertical"
+    android:background="@color/bg_comm"
+    >
+    <include layout="@layout/include_login_title" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="25dp"
+        >
+        <ImageView
+            android:id="@+id/huo_sdk_iv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/huosdk_mobile" />
+        <EditText
+            android:id="@+id/huo_sdk_et_account"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/huo_sdk_iv_user"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="8dp"
+            android:paddingRight="30dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/text_lowgray"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:background="@color/text_lowgray"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        >
+        <ImageView
+            android:id="@+id/huo_sdk_iv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/huosdk_mail" />
+
+        <Button
+            android:id="@+id/huo_sdk_btn_code"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/shape_round_stroke_5_theme"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:layout_centerVertical="true"
+            android:textColor="@color/bg_theme"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/huo_sdk_et_code"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/huo_sdk_btn_code"
+            android:layout_toRightOf="@+id/huo_sdk_iv_code"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="text"
+            android:maxLength="6"
+            android:paddingLeft="8dp"
+            android:paddingRight="30dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/text_lowgray"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:background="@color/text_lowgray"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin">
+
+        <ImageView
+            android:id="@+id/huo_sdk_iv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/huosdk_password" />
+
+        <ImageView
+            android:id="@+id/huo_sdk_img_show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/huo_sdk_selector_pwd_eye" />
+
+        <EditText
+            android:id="@+id/huo_sdk_et_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/huo_sdk_img_show_pwd"
+            android:layout_toRightOf="@+id/huo_sdk_iv_pwd"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="8dp"
+            android:paddingRight="30dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/text_lowgray"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:background="@color/text_lowgray"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:background="@drawable/shape_circle_rect_blue"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="注册即表示同意"
+            android:textColor="@color/text_lowgray"
+            android:textSize="@dimen/text_hint" />
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="《平台用户协议》"
+            android:textColor="@color/bg_blue"
+            android:textSize="@dimen/text_hint" />
+
+    </LinearLayout>
+</LinearLayout>

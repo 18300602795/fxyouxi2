@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoInitialState="expanded"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoParallaxOffset="0dp"
+    sothree:umanoScrollableView="@+id/scroll_detail"
+    sothree:umanoShadowHeight="0dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_bg_detail"
+        android:background="@color/tranparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scroll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_headView_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_headView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/stban" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <com.liang530.views.imageview.roundedimageview.RoundedImageView
+                                android:id="@+id/iv_game_img"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/ic_launcher"
+                                app:riv_corner_radius="16dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_game_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:text="@string/test_game_name"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_title" />
+
+                        <TextView
+                            android:id="@+id/tv_game_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="@string/test_game_size"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/text_hint" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_size_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="3dp">
+
+                            <com.etsdk.app.huov7.view.GameTagView
+                                android:id="@+id/gameTagView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="80dp"></com.etsdk.app.huov7.view.GameTagView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_game_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:singleLine="true"
+                            android:text="@string/test_game_status"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/text_hint" />
+
+                        <ImageView
+                            android:id="@+id/iv_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="3dp"
+                            android:src="@mipmap/stcz" />
+                    </LinearLayout>
+
+                    <com.flyco.tablayout.SlidingTabLayout
+                        android:id="@+id/tablayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        app:tl_indicator_color="@color/bg_blue"
+                        app:tl_indicator_height="2dp"
+                        app:tl_indicator_margin_left="10dp"
+                        app:tl_indicator_margin_right="10dp"
+                        app:tl_tab_space_equal="true"
+                        app:tl_textSelectColor="@color/bg_blue"
+                        app:tl_textUnselectColor="@color/text_black"
+                        app:tl_textsize="@dimen/text_normal" />
+
+                </LinearLayout>
+
+                <com.etsdk.app.huov7.view.widget.XSViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_headView_root"
+                    android:layout_marginBottom="45dp"
+                    android:background="@color/white" />
+                <com.etsdk.app.huov7.view.LoadStatusView
+                    android:id="@+id/loadview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.etsdk.app.huov7.view.GameDetailDownView
+            android:id="@+id/gameDetailDownView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

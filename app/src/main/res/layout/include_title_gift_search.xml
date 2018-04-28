@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_blue"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/iv_titleLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:id="@+id/iv_gotoMsg"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@mipmap/back" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_circle_rect_white"
+        android:drawablePadding="@dimen/padding"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="@dimen/search_icon"
+            android:layout_height="@dimen/search_icon"
+            android:src="@mipmap/sysousuo"
+            android:layout_gravity="center|left"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+        <EditText
+            android:id="@+id/et_game_gift_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:background="@null"
+            android:hint="输入游戏名，搜索礼包"
+            android:gravity="center|left"
+            android:textSize="@dimen/text_content"
+            android:singleLine="true"
+             />
+    </FrameLayout>
+
+</LinearLayout>

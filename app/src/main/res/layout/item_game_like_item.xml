@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <com.liang530.views.imageview.roundedimageview.RoundedImageView
+        android:id="@+id/iv_game_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:riv_corner_radius="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="保卫萝卜"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/text_black"
+        android:lines="1"
+        android:gravity="center"/>
+
+</LinearLayout>

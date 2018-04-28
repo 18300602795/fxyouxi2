@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_blue"
+    android:id="@+id/huo_sdk_rl_title"
+    >
+    <TextView
+        android:id="@+id/tv_titleLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@mipmap/back"
+        android:layout_centerVertical="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:text="text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLength="12"
+        />
+    <TextView
+        android:id="@+id/tv_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:text="注册 >"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

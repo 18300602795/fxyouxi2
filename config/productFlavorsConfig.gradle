@@ -1,0 +1,33 @@
+android {
+	 productFlavors {
+	 	 "dielian249" {
+	 	 	 applicationId "com.dielian249.huosuapp"
+	 	 	 versionCode 302
+	 	 	 versionName "1.1.4"
+	 	 	 resValue( "string", "app_name", "纷享游戏" )
+	 	 	 resValue( "string", "accessibility_service_name", "纷享游戏自动安装" )
+	 	 	 buildConfigField( "int", "projectCode", "249" )
+	 	 	 buildConfigField("String", "USE_URL", '"1"')
+	 	 	 buildConfigField("String", "USE_PLATFORM_MONEY", '"0"')
+	 	 	 buildConfigField("String", "URL_SCHEMA", '"http://"')
+	 	 	 buildConfigField("String", "URL_PRE", '"api."')
+	 	 	 buildConfigField("String", "URL", '"idielian.com"')
+	 	 	 buildConfigField("String", "URL_SUFFIX", '"/api/v7/"')
+	 	 	 buildConfigField("String", "IP", '"39.108.103.115"')
+	 	 	 buildConfigField("String", "goto_url_scheme", '"xxxx"')
+	 	 	 buildConfigField("String", "USE_MESSGAE", '"1"')
+	 	 	 buildConfigField("String", "qq_appid", '""')
+	 	 	 buildConfigField("String", "qq_appkey", '""')
+	 	 	 buildConfigField("String", "wx_appid", '""')
+	 	 	 buildConfigField("String", "wx_appkey", '""')
+	 	 	 buildConfigField("String", "wb_appid", '""')
+	 	 	 buildConfigField("String", "wb_appkey", '""')
+	 	 	 buildConfigField("String", "wb_directurl", '""')
+	 	 	 buildConfigField("String", "DEFAULT_PARTNER", '""')
+	 	 	 buildConfigField("String", "DEFAULT_SELLER", '""')
+	 	 	 buildConfigField("String", "PRIVATE", '""')
+	 	 	 buildConfigField("String", "BASE_URL", '"http://api.idielian.com"')
+	 	 	 manifestPlaceholders = [HS_APPID : "100",HS_CLIENTID : "300",HS_APPKEY : "7f3e7080b32a3ebe67880a67894a5647",HS_CLIENTKEY : "7f3e7080b32a3ebe67880a67894a5647"]
+	 	 }
+	 }
+}

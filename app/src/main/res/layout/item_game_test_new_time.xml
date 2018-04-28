@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+       style="@style/line_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/shijian"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_round10_green_white"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="今日开测"
+            android:textStyle="bold"
+            android:textColor="@color/bg_green"
+            android:textSize="@dimen/text_content" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:gravity="center|right"
+            android:paddingLeft="10dp"
+            android:text="更多"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_hint" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@mipmap/smsan" />
+    </LinearLayout>
+</LinearLayout>

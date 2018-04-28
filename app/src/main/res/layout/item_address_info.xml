@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center|left">
+    <TextView
+        android:id="@+id/tv_addressName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湖南"
+        android:textSize="@dimen/text_content"
+        android:textColor="@color/text_black"
+        />
+    <ImageView
+        android:id="@+id/iv_selected"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="8dp"
+        android:background="@color/red"
+        />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_comm"
+    tools:context="com.etsdk.app.huov7.ui.GameListActivity"
+    android:gravity="center_horizontal">
+    <include layout="@layout/include_comm_title"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="如果新的小号在本游戏的多个服务器中玩过，出售这个小号时，这些服务器中的多个小号将一并出售。但其他小号是不受影响的。"
+        android:textColor="@color/orange_2"
+        android:background="@drawable/shape_circle_rect_light_yellow"
+        android:padding="@dimen/common_padding"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="4dp"/>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shape_triangle"/>
+
+    <ImageView
+        android:id="@+id/iv_service"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@mipmap/huosdk_qq"/>
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系客服"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/blue3"/>
+</LinearLayout>

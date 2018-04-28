@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_comm">
+    <ListView
+        android:id="@+id/huo_sdk_lv_select_account"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:divider="@color/tranparent"
+        android:listSelector="@null"
+        >
+    </ListView>
+</LinearLayout>

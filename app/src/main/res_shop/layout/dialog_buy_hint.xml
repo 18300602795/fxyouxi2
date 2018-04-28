@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:background="@drawable/shape_gift_background_white"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:padding="@dimen/common_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买家须知"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_title"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1、角色信息已通过我们官方审核；\n2、购买后角色直接转入您的账号，登录游戏即可查收角色；若未见请在悬浮球内切换小号；\n3、因时间因素造成的角色数据变化（如排行榜），买家须理解并接受；\n4、购买后不可退货；\n5、交易过程不涉及账号交易或换绑操作，无需担心购买的号被找回。"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="18dp"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  我已阅读买家须知"
+            android:button="@drawable/select_checkbox_account"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/common_margin">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="放弃购买"
+                android:textColor="@color/text_black"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/shape_circle_rect_gray_gray_5"/>
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/shape_circle_rect_gray_gray_5"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

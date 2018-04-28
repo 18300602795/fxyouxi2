@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_entity_img"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/xiaoxiongup"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:id="@+id/tv_entity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小熊U盘"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="7个工作日内为您快递"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/text_content"
+            android:textColor="@color/text_black"
+            />
+
+    </LinearLayout>
+    <View style="@style/line_color"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin" />
+</LinearLayout>

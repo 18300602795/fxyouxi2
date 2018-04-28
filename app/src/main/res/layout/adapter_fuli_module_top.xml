@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fuliTopRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/tv_applyGift"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="礼包领取"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_black"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/stlib"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/tv_inviteFriend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="邀请好友"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_black"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/styaoq"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_scoreShop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="积分商城"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_black"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/stjifen"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <View style="@style/line_split_color"/>
+</LinearLayout>

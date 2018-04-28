@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_gift_background_white"
+    android:gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left"
+        android:text="领取成功"
+        android:textColor="@color/bg_theme"
+        android:paddingLeft="@dimen/common_margin"
+        android:textSize="@dimen/text_title" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_theme"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="left"
+            android:text="请在礼包有效期间内尽快使用"
+            android:textColor="@color/text_lowgray"
+            android:textSize="@dimen/text_hint"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_show_gift_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_round5_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:text="礼包码："
+                    android:textSize="@dimen/text_content"
+                    android:textColor="@color/text_main_black"
+                    />
+                <TextView
+                    android:id="@+id/tv_gift_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CCCCCC"
+                    android:textColor="@color/bg_blue" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/common_margin"
+                android:background="@drawable/shape_circle_rect_blue"
+                android:gravity="center"
+                android:text="复制"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="12dp"
+            >
+            <TextView
+                android:id="@+id/dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round5_gray"
+                android:gravity="center"
+                android:text="关闭"
+                android:textColor="@color/text_main_black"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/dialog_down"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/shape_circle_rect_blue"
+                android:gravity="center"
+                android:text="下载游戏"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

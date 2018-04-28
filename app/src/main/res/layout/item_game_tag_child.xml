@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="3dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:background="@color/class_color1"
+    android:gravity="center"
+    android:text="@string/test_game_type1"
+    android:textColor="@color/white"
+    android:textSize="10sp"
+    android:singleLine="true"
+    android:enabled="false"
+    android:clickable="false"/>

@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="GameDetailStyle" parent="Theme.AppCompat.Translucent">
+        <item name="android:windowAnimationStyle">@style/AnimationDetalActivity</item>
+    </style>
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+    <style name="AnimationDetalActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/popup_show</item>
+        <item name="android:activityOpenExitAnimation">@anim/popup_hide</item>
+        <item name="android:activityCloseEnterAnimation">@anim/popup_show</item>
+        <item name="android:activityCloseExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="TabLayoutTextStyle"><item name="android:textSize">@dimen/text_title</item></style>
+    <style name="MainActivityStyle" parent="Theme.AppCompat.Translucent">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!--返利界面的edit-->
+    <style name="back_edit_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/back_edit_bg</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+</resources>

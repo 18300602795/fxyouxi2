@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:paddingLeft="@dimen/common_margin"
+    android:paddingRight="@dimen/common_margin"
+    >
+    <ImageView
+        android:id="@+id/iv_msg_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/msg_coupon"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal"
+            android:text="优惠活动"
+            />
+        <TextView
+            android:id="@+id/tv_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠活动优惠活动优惠活动"
+            android:textSize="@dimen/text_content"
+            android:textColor="@color/text_gray"
+            />
+    </LinearLayout>
+
+</LinearLayout>

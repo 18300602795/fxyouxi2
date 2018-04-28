@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/common_margin"
+    android:layout_marginRight="@dimen/common_margin"
+    android:layout_marginTop="5dp"
+    >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本信息"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_normal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前版本"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_content"
+            />
+        <TextView
+            android:id="@+id/tv_curVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_content"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支持系统"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_content"
+            />
+        <TextView
+            android:id="@+id/tv_supportSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android 4.0"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_content"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新信息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_content"
+            />
+        <TextView
+            android:id="@+id/tv_updateInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android 4.0"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_content"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>

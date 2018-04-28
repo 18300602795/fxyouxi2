@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_gift_coupon_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.etsdk.app.huov7.ui.MineGiftCouponListActivity">
+    <include layout="@layout/include_comm_title"/>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_gift_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        app:tl_indicator_color="@color/bg_blue"
+        app:tl_textSelectColor="@color/bg_blue"
+        app:tl_textUnselectColor="@color/text_black"
+        app:tl_indicator_margin_left="5dp"
+        app:tl_indicator_margin_right="5dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textsize="@dimen/text_normal"
+        />
+    <View style="@style/line_split_color"/>
+    <com.liang530.views.viewpager.SViewPager
+        android:id="@+id/vp_gift_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.liang530.views.viewpager.SViewPager>
+</LinearLayout>

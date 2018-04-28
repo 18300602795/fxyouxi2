@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etsdk.app.huov7.view.PullZoomView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.etsdk.app.huov7.ui.TestRecyclerViewActivity">
+
+    <ImageView
+        android:id="@+id/iv_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/gg"
+        />
+    <include layout="@layout/include_comm_title"
+        android:visibility="gone"/>
+    <com.etsdk.app.huov7.view.ZoomRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.etsdk.app.huov7.view.ZoomRecyclerView>
+
+</com.etsdk.app.huov7.view.PullZoomView>

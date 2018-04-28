@@ -1,0 +1,166 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="fab_margin">0dp</dimen>
+
+
+    <dimen name="size5">5dp</dimen>
+    <dimen name="size10">10dp</dimen>
+    <dimen name="size16">16sp</dimen>
+    <dimen name="size14">14sp</dimen>
+
+    <dimen name="size20">20dp</dimen>
+    <dimen name="size30">30dp</dimen>
+    <dimen name="size40">40dp</dimen>
+    <dimen name="size45">45dp</dimen>
+    <dimen name="size50">50dp</dimen>
+    <dimen name="size60">60dp</dimen>
+    <dimen name="size70">70dp</dimen>
+    <dimen name="size80">80dp</dimen>
+    <dimen name="size100">100dp</dimen>
+    <!--字体大小-->
+    <!--<dimen name="text_title">17sp</dimen>-->
+    <!--<dimen name="text_content">14sp</dimen>-->
+    <dimen name="text_hint">11sp</dimen>
+    <dimen name="text_normal">15sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_25sp">25sp</dimen>
+
+    <dimen name="padding">12dp</dimen>
+    <dimen name="padding16">16dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="list_item_height">45dp</dimen>
+    <dimen name="line_height">0.8dp</dimen>
+    <dimen name="input_height">50dp</dimen>
+
+
+    <!--h:高度  w:宽度   m:margin,padding 4维-->
+    <dimen name="h_1">1dp</dimen>
+    <dimen name="h_2">2dp</dimen>
+    <dimen name="h_4">4dp</dimen>
+    <dimen name="h_6">6dp</dimen>
+    <dimen name="h_8">8dp</dimen>
+    <dimen name="h_10">10dp</dimen>
+    <dimen name="h_12">12dp</dimen>
+    <dimen name="h_14">14dp</dimen>
+    <dimen name="h_18">18dp</dimen>
+    <dimen name="h_20">20dp</dimen>
+    <dimen name="h_24">24dp</dimen>
+    <dimen name="h_29">29dp</dimen>
+    <dimen name="h_32">32dp</dimen>
+    <dimen name="h_36">36dp</dimen>
+    <dimen name="h_42">42dp</dimen>
+    <dimen name="h_46">46dp</dimen>
+    <dimen name="h_48">48dp</dimen>
+    <dimen name="h_50">50dp</dimen>
+    <dimen name="h_55">55dp</dimen>
+    <dimen name="h_58">58dp</dimen>
+    <dimen name="h_70">70dp</dimen>
+    <dimen name="h_64">64dp</dimen>
+    <dimen name="h_72">72dp</dimen>
+    <dimen name="h_80">80dp</dimen>
+    <dimen name="h_100">100dp</dimen>
+    <dimen name="h_110">110dp</dimen>
+    <dimen name="h_150">150dp</dimen>
+    <dimen name="h_180">180dp</dimen>
+    <dimen name="h_196">196dp</dimen>
+    <dimen name="h_200">200dp</dimen>
+    <dimen name="h_210">210dp</dimen>
+    <dimen name="h_250">250dp</dimen>
+    <dimen name="h_300">300dp</dimen>
+
+    <dimen name="w_2">2dp</dimen>
+    <dimen name="w_4">4dp</dimen>
+    <dimen name="w_6">6dp</dimen>
+    <dimen name="w_8">8dp</dimen>
+    <dimen name="w_12">12dp</dimen>
+    <dimen name="w_16">16dp</dimen>
+    <dimen name="w_18">18dp</dimen>
+    <dimen name="w_24">24dp</dimen>
+    <dimen name="w_32">32dp</dimen>
+    <dimen name="w_36">36dp</dimen>
+    <dimen name="w_48">48dp</dimen>
+    <dimen name="w_50">50dp</dimen>
+    <dimen name="w_55">55dp</dimen>
+    <dimen name="w_58">58dp</dimen>
+    <dimen name="w_64">64dp</dimen>
+    <dimen name="w_72">72dp</dimen>
+    <dimen name="w_80">80dp</dimen>
+    <dimen name="w_100">100dp</dimen>
+    <dimen name="w_120">120dp</dimen>
+    <dimen name="w_150">150dp</dimen>
+    <dimen name="w_196">196dp</dimen>
+    <dimen name="w_200">200dp</dimen>
+    <dimen name="w_250">250dp</dimen>
+    <dimen name="w_300">300dp</dimen>
+
+    <dimen name="m_6">6dp</dimen>
+    <dimen name="m_8">8dp</dimen>
+    <dimen name="m_12">12dp</dimen>
+    <dimen name="m_18">18dp</dimen>
+    <dimen name="m_24">24dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="common_margin">15dp</dimen>
+    <dimen name="common_padding">15dp</dimen>
+    <!--2017/5/27 几个常用尺寸-->
+    <!--搜索图标宽高-->
+    <dimen name="search_icon">18dp</dimen>
+    <!--细线-->
+    <dimen name="line">1dp</dimen>
+    <!--粗线-->
+    <dimen name="bold_line">8dp</dimen>
+    <!--推荐页轮播下面的分类-->
+    <dimen name="tj_main_tab_margin">11dp</dimen>
+    <!--推荐页轮播下面的分类文字大小-->
+    <dimen name="tj_main_tab_textsize">13sp</dimen>
+    <!--推荐页轮播文字栏高度-->
+    <dimen name="tj_main_ad_height">30dp</dimen>
+    <!--推荐页各栏头部高度-->
+    <dimen name="tj_main_head_height">35dp</dimen>
+    <!--常用标题型文字大小（推荐页各栏头部文字大小、游戏名）-->
+    <!--<dimen name="text_main">15sp</dimen>-->
+    <!--游戏图标宽高-->
+    <dimen name="game_icon">60dp</dimen>
+    <!--底部tab高度-->
+    <dimen name="main_tab_height">48dp</dimen>
+    <!--游戏页顶部tab高度-->
+    <dimen name="game_tab_height">60dp</dimen>
+    <!--游戏页顶部tab内间距-->
+    <dimen name="game_tab_padding">10dp</dimen>
+    <!--游戏页顶部tab文字大小-->
+    <dimen name="game_tab_textsize">13sp</dimen>
+    <!--游戏页顶部tab图标大小-->
+    <dimen name="game_tab_iconsize">25dp</dimen>
+    <!--开服开测tab高度-->
+    <dimen name="start_tab_height">45dp</dimen>
+    <!--游戏列表条目高度-->
+    <dimen name="game_item_height">65dp</dimen>
+    <!--小文字（开服开测时间）-->
+    <dimen name="text_little">10sp</dimen>
+    <!--中文字（开服开测区服）-->
+    <dimen name="text_middle">12sp</dimen>
+    <!--资讯列表图标宽-->
+    <dimen name="news_list_iconwidth">100dp</dimen>
+    <!--资讯列表图标高-->
+    <dimen name="news_list_iconhight">65dp</dimen>
+    <!--资讯标题大小-->
+    <dimen name="news_title_textsize">13sp</dimen>
+    <!--资讯标签高度-->
+    <dimen name="news_tag_hight">15dp</dimen>
+    <!--资讯标签文字大小-->
+    <dimen name="news_tag_textsize">9sp</dimen>
+    <!--标题文字大小（昵称、账号安全等）-->
+    <dimen name="text_title">18sp</dimen>
+    <!--内容文字（个人中心充值记录这些）-->
+    <dimen name="text_content">14sp</dimen>
+    <!--个人中心礼包客服。。。栏高度-->
+    <dimen name="usercenter_menu_hight">65dp</dimen>
+    <!--帐号管理头像栏高-->
+    <dimen name="user_admin_icon_height">80dp</dimen>
+    <!--帐号管理栏高-->
+    <dimen name="user_admin_height">40dp</dimen>
+
+
+</resources>

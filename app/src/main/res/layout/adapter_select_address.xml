@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <TextView
+            android:id="@+id/btn_down_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="官方下载"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/shape_circle_rect_blue"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+</FrameLayout>

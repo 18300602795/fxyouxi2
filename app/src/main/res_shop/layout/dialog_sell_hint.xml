@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:background="@drawable/shape_gift_background_white"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:padding="@dimen/common_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卖家须知"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_title"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1、提交出售申请后，该小号在该游戏中所有区服的角色都将移出，无法登陆；\n2、上架的小号可以在买家购买前下架并取消出售，取消后会回到您的账号下；\n3、客服在审核过程中会根据情况对游戏截图、描述进行适当补充；\n4、一旦售出，不可恢复；\n5、售出将收取3%手续费（最低3元），余款以平台币形式转至您账号下；\n6、卖家须保证所提供信息属实，因虚假信息导致的纠纷，由卖家承担责任。"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="18dp"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  我已阅读卖家须知"
+            android:button="@drawable/select_checkbox_account"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/common_margin">
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/shape_circle_rect_green_deep"/>
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:hint="请输入验证码"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:background="@drawable/shape_circle_rect_gray_gray_5"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_money_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*售出将获得xxxxx平台币，平台币可用于平台所有游戏充值，也可在个人中心提现。"
+            android:layout_marginTop="@dimen/common_margin"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_yellow"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/common_margin">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="放弃出售"
+                android:textColor="@color/text_black"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/shape_circle_rect_gray_gray_5"/>
+
+            <TextView
+                android:id="@+id/tv_sell"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="确定出售"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/shape_circle_rect_gray_gray_5"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

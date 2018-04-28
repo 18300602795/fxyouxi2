@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_common"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_comm_title" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="提现方式"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_account_type"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="请选择提现方式"
+                android:lines="1"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_array"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/smsan" />
+            </FrameLayout>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/v_bank_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dedede"
+            android:visibility="gone" />
+
+        <TableRow
+            android:id="@+id/tr_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="银行名称"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_bank"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入您要提现的银行名称"
+                android:lines="1"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <View
+            android:id="@+id/v_blanch_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dedede"
+            android:visibility="gone" />
+
+        <TableRow
+            android:id="@+id/tr_bank_blanch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="开户支行"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_bank_blanch"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请填写银行卡的开户支行"
+                android:lines="1"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <View
+            android:id="@+id/v_code_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dedede"
+            android:visibility="gone" />
+
+        <TableRow
+            android:id="@+id/tr_bank_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="银行卡号"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_bank_code"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入您要提现的银行卡号"
+                android:inputType="numberSigned"
+                android:maxLength="23"
+                android:lines="1"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/v_account_id_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dedede"
+            android:visibility="gone" />
+
+        <TableRow
+            android:id="@+id/tr_account_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="填写账号"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_account_id"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入您要提现微信账号"
+                android:lines="1"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/v_account_name_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dedede"
+            android:visibility="gone" />
+
+        <TableRow
+            android:id="@+id/tr_account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="提现户名"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_account_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请填写您的姓名"
+                android:lines="1"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+    <CheckBox
+        android:id="@+id/cb_set_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:button="@drawable/select_checkbox_account"
+        android:text="  同时设为默认"
+        android:textColor="@color/text_gray"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_circle_rect_blue"
+        android:gravity="center"
+        android:text="确 定"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

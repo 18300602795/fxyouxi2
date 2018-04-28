@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在地区"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_normal"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_red_xx"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View style="@style/line_color"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_selectAddress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
+        app:tabTextColor="@color/text_black"
+        app:tabSelectedTextColor="@color/red"
+        app:tabIndicatorColor="@color/red"
+        >
+    </android.support.design.widget.TabLayout>
+    <View style="@style/line_color"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

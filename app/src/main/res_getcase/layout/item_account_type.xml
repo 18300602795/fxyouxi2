@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv"
+    android:layout_width="120dp"
+    android:layout_height="51dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="支付宝"
+    android:textColor="@color/black"
+    android:textSize="14sp" >
+</TextView>

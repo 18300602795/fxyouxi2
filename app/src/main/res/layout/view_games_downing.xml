@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在下载"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="@color/aile_line_gray"/>
+
+    <TextView
+        android:id="@+id/tv_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王者农药"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="已下载66.66%"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/bg_green"/>
+
+    <TextView
+        android:id="@+id/tv_down_num"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:text="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/bg_green"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/iv_go"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:background="@mipmap/smsan"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+</LinearLayout>

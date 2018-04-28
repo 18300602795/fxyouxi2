@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="实物兑换专区"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_content"
+            android:paddingLeft="@dimen/common_margin"
+            />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="更多"
+            android:drawableRight="@mipmap/smsan"
+            android:drawablePadding="5dp"
+            android:gravity="center|left"
+            android:paddingRight="@dimen/common_margin"
+            />
+    </LinearLayout>
+</LinearLayout>

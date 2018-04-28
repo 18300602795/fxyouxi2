@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/tranparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_titleLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/tv_titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:maxLength="12"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title" />
+
+    <ImageView
+        android:id="@+id/iv_gotoMsg"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="3dp"
+        android:padding="5dp"
+        android:src="@mipmap/syxiaoxi_nomal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/iv_downManager"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"
+        android:src="@mipmap/sydown"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_gotoMsg"/>
+
+</RelativeLayout>

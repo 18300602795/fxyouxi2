@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    tools:context="com.etsdk.app.huov7.ui.GameFeedbackActivity">
+    <include layout="@layout/include_comm_title"/>
+    <EditText
+        android:id="@+id/et_feedbackContent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:hint="提出您宝贵的意见或建议有助于我们提供更好的服务"
+        android:textSize="@dimen/text_content"
+        android:textColor="@color/text_black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:gravity="top"
+        />
+
+    <EditText
+        android:id="@+id/et_feedbackPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:hint="请留下您的手机号"
+        android:textSize="@dimen/text_content"
+        android:textColor="@color/text_black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@color/bg_blue"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title"
+        />
+</LinearLayout>

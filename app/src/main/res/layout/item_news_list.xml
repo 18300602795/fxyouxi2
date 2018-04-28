@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin">
+        <ImageView
+            android:id="@+id/iv_news_image"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:src="@mipmap/gg"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="65dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/common_margin">
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="王者荣耀今日特惠"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal"
+                android:lineSpacingExtra="3dp"
+                android:lines="2"
+                android:ellipsize="end"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_news_type"
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/shape_circle_rect_green"
+                    android:text="新闻"
+                    android:textSize="9sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_news_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="2017-5-5 11:22"
+                    android:textColor="@color/text_lowgray"
+                    android:textSize="@dimen/text_hint" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/v_line"
+        style="@style/line_color"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"/>
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_comm">
+
+    <LinearLayout
+        android:id="@+id/ll_setvice_top"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/pic_top_csc1080"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/back"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服中心"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text_title"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp">
+
+            <com.etsdk.app.huov7.view.StrokeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服在线时间："
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <com.etsdk.app.huov7.view.StrokeTextView
+                android:id="@+id/stv_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作日：9:00-18:00 21:00-22:30"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginTop="3dp"
+                />
+            <!--<com.etsdk.app.huov7.view.StrokeTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="工作日：9:00-18:00 21:00-22:30"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="15sp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+            <!--<com.etsdk.app.huov7.view.StrokeTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="节假日：21:00-22:30"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="15sp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="24.0dip"
+            android:drawableLeft="@mipmap/pic_cs_logo"
+            android:drawablePadding="10.0dip"
+            android:gravity="center_vertical"
+            android:text="客服热线："
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="24.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3.0dip"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:paddingTop="3.0dip">
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="027-88300587"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.liang530.views.listview.NoScrollListView
+                android:id="@+id/lv_service_qq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:divider="#ffdedede"
+                android:dividerHeight="1.0px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="24.0dip"
+                    android:drawableLeft="@mipmap/pic_kfqq_logo"
+                    android:drawablePadding="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="玩家QQ群"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.liang530.views.listview.NoScrollListView
+                android:id="@+id/lv_qq_group"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bg_comm"
+                android:divider="#ffdedede"
+                android:dividerHeight="1.0px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

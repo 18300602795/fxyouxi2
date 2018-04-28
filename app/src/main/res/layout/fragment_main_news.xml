@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/include_title_search"/>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_main_game"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tl_textSelectColor="#71c13e"
+        app:tl_textUnselectColor="@color/text_black"
+        app:tl_textsize="17sp"
+        app:tl_indicator_color="#71c13e"
+        app:tl_indicator_height="2dp"
+        app:tl_tab_space_equal="true">
+    </com.flyco.tablayout.SlidingTabLayout>
+    <View
+        android:id="@+id/v_line"
+        style="@style/line_color"/>
+    <com.liang530.views.viewpager.SViewPager
+        android:id="@+id/vp_main_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.liang530.views.viewpager.SViewPager>
+</LinearLayout>

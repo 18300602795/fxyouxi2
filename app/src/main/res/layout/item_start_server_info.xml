@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/bg_blue"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.liang530.views.imageview.roundedimageview.RoundedImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@color/bg_blue"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="36dp"
+            app:riv_corner_radius="4dp"
+            />
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/test_game_status"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/text_hint"
+            android:textColor="@color/text_black"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+</LinearLayout>
